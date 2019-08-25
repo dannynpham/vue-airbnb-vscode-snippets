@@ -3,7 +3,7 @@
   "displayName": "Vue Airbnb Style VSCode Snippets",
   "description": "Vue Airbnb style snippets",
   "icon": "images/Vue.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "dannynpham",
   "engines": {
     "vscode": "^1.8.0"
