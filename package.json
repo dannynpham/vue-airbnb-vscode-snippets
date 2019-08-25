@@ -3,7 +3,7 @@
   "displayName": "Vue Airbnb Style VSCode Snippets",
   "description": "Vue Airbnb style snippets",
   "icon": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "dannynpham",
   "engines": {
     "vscode": "^1.14.0"
@@ -53,24 +53,12 @@
         "path": "./snippets/vue-script-vuex.json"
       },
       {
-        "language": "javascript",
-        "path": "./snippets/vue-script-router.json"
-      },
-      {
         "language": "typescript",
         "path": "./snippets/vue-script.json"
       },
       {
         "language": "typescript",
         "path": "./snippets/vue-script-vuex.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/vue-script-router.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/nuxt-config.json"
       }
     ]
   }

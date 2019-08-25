@@ -1,0 +1,236 @@
+{
+  "Vue Data": {
+    "prefix": "vdata",
+    "body": ["data: () => ({",
+      "  ${1:key}: ${2:value}",
+      "}),"
+    ],
+    "description": "Vue Component Data"
+  },
+  "Vue Methods": {
+    "prefix": "vmethod",
+    "body": [
+      "methods: {",
+      "  ${1:name}() {",
+      "    ${0}",
+      "  },",
+      "},"
+    ],
+    "description": "Vue component method"
+  },
+  "Vue Computed": {
+    "prefix": "vcomputed",
+    "body": [
+      "computed: {",
+      "  ${1:name}() {",
+      "    return this.${2:data} ${0}",
+      "  },",
+      "},"
+    ],
+    "description": "computed value"
+  },
+  "Vue Lifecycle beforeCreate": {
+    "prefix": "vbeforecreate",
+    "body": [
+      "beforeCreate() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue beforeCreate lifecycle hook"
+  },
+  "Vue Lifecycle created": {
+    "prefix": "vcreated",
+    "body": [
+      "created() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue created lifecycle hook"
+  },
+  "Vue Lifecycle beforeMount": {
+    "prefix": "vbeforemount",
+    "body": [
+      "beforeMount() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue beforeMount lifecycle hook"
+  },
+  "Vue Lifecycle mounted": {
+    "prefix": "vmounted",
+    "body": [
+      "mounted() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue mounted lifecycle hook"
+  },
+  "Vue Lifecycle beforeUpdate": {
+    "prefix": "vbeforeupdate",
+    "body": [
+      "beforeUpdate() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue beforeUpdate lifecycle hook"
+  },
+  "Vue Lifecycle updated": {
+    "prefix": "vupdated",
+    "body": [
+      "updated() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue updated lifecycle hook"
+  },
+  "Vue Lifecycle beforeDestroy": {
+    "prefix": "vbeforedestroy",
+    "body": [
+      "beforeDestroy() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue beforeDestroy lifecycle hook"
+  },
+  "Vue Lifecycle destroyed": {
+    "prefix": "vdestroyed",
+    "body": [
+      "destroyed() {",
+      "  ${0};",
+      "},"
+    ],
+    "description": "Vue destroyed lifecycle hook"
+  },
+  "Vue Watchers": {
+    "prefix": "vwatch",
+    "body": [
+      "watch: {",
+      "  ${1:data}() {",
+      "    ${0}",
+      "  }",
+      "},"
+    ],
+    "description": "vue watcher"
+  },
+  "Vue Watchers with Options": {
+    "prefix": "vwatch-opt",
+    "body": [
+      "watch: {",
+      "  ${1:data}: {",
+      "    immediate: ${2:true},",
+      "    deep: ${3:true},",
+      "    handler() {",
+      "      ${0}",
+      "    }",
+      "  }",
+      "},"
+    ],
+    "description": "vue watcher with options"
+  },
+  "Vue Props with Default": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "  ${1:propName}: {",
+      "    type: ${2:Number},",
+      "    default: ${0},",
+      "  },",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
+  "Vue Props with Required": {
+    "prefix": "vprops-required",
+    "body": [
+      "props: {",
+      "  ${1:propName}: {",
+      "    type: ${2:Number},",
+      "    required: true,",
+      "  },",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
+  "Vue Import File": {
+    "prefix": "vimport",
+    "body": ["import ${1:New} from '@/components/${1:New}';"],
+    "description": "Import one component into another"
+  },
+  "Vue Import into the Component": {
+    "prefix": "vcomponents",
+    "body": [
+      "components: {",
+      "  ${1:New},",
+      "},"
+    ],
+    "description": "Import one component into another, within export statement"
+  },
+  "Vue MapState": {
+    "prefix": "vmapstate",
+    "body": [
+      "...mapState([",
+      "  ${1:'nameOfState'},",
+      "]),"
+    ],
+    "description": "Vuex map states inside a vue component"
+  },
+  "Vue MapGetters": {
+    "prefix": "vmapgetters",
+    "body": [
+      "...mapGetters([",
+      "  ${1:'nameOfGetter'},",
+      "]),"
+    ],
+    "description": "Vuex mapgetters inside a vue component"
+  },
+  "Vue MapMutations": {
+    "prefix": "vmapmutations",
+    "body": [
+      "...mapMutations([",
+      "  ${1:'nameOfMutation'},",
+      "]),"
+    ],
+    "description": "Vuex mapmutations inside a vue component"
+  },
+  "Vue MapActions": {
+    "prefix": "vmapactions",
+    "body": [
+      "...mapActions([",
+      "  ${1:'nameOfAction'},",
+      "]),"
+    ],
+    "description": "Vuex mapactions inside a vue component"
+  },
+  "Vue Import Library": {
+    "prefix": "vimport-lib",
+    "body": ["import { ${1:libName} } from '${1:libName}'"],
+    "description": "import a library"
+  },
+  "Unit Test File": {
+    "prefix": "vbasetest",
+    "body": [
+      "import { mount } from '@vue/test-utils';",
+      "import ${1:HelloWorld} from './components/${1:HelloWorld}';",
+      "",
+      "describe('${1:HelloWorld}', () => {",
+      "  test('${1:HelloWorld} is a Vue instance', () => {",
+      "    expect(${1:HelloWorld}.isVueInstance).toBeTruthy();",
+      "  });",
+      "",
+      "  test('${2:should render correct contents}', () => {",
+      "    ${0}",
+      "  });",
+      "});"
+    ],
+    "description": "Generate unit test file"
+  },
+  "Unit Test": {
+    "prefix": "vtest",
+    "body": [
+      "test('${1:should render correct contents}', () => {",
+      "  ${0}",
+      "})"
+    ],
+    "description": "Generate unit test file"
+  }
+}

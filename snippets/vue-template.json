@@ -1,0 +1,21 @@
+{
+  "Vue v-for": {
+    "prefix": "vfor",
+    "body": [
+      "<${1:div} v-for=\"${2:item} in ${2:item}s\" :key=\"${2:item}.id\">",
+      "  {{ ${2:item} }}",
+      "</${1:div}>"
+    ],
+    "description": "v-for"
+  },
+  "Vue v-on Shortcut Directive": {
+    "prefix": "von",
+    "body": ["@click=\"${1:handler}(${2:arg}, $event)\""],
+    "description": "v-on click handler with arguments"
+  },
+  "Vue Component with Props Binding": {
+    "prefix": "vel-props",
+    "body": ["<${1:component} :${1:propName}=\"${0}\" />"],
+    "description": "component element with prop"
+  }
+}

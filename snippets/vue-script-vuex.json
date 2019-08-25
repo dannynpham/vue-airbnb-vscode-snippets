@@ -1,0 +1,60 @@
+{
+  "Vuex Getters": {
+    "prefix": "vgetter",
+    "body": [
+      "const getters = {",
+      "  ${1:value}: (state) => state.${1:value},",
+      "};"
+    ],
+    "description": "Vuex getters"
+  },
+  "Vuex Mutation": {
+    "prefix": "vmutation",
+    "body": [
+      "const mutations = {",
+      "  ${1:updateValue}(state, ${3:payload}) {",
+      "    state.${2:value} = ${3:payload};",
+      "  },",
+      "};"
+    ],
+    "description": "Vuex mutations"
+  },
+  "Vuex Action": {
+    "prefix": "vaction",
+    "body": [
+      "const actions = {",
+      "  ${1:updateValue}({ commit }, ${2:payload}) {",
+      "    commit('${1:updateValue}', ${2:payload});",
+      "  },",
+      "};"
+    ],
+    "description": "Vuex actions"
+  },
+  "Vuex Module": {
+    "prefix": "Vuexport",
+    "body": [
+      "export default {",
+      "  state,",
+      "  getters,",
+      "  mutations,",
+      "  actions,",
+      "};"
+    ],
+    "description": "Vuex export module"
+  },
+  "Vuex Store": {
+    "prefix": "vstore",
+    "body": [
+      "const state = () => ({",
+      "  value: 'myvalue'",
+      "});",
+      "",
+      "const getters = {};",
+      "",
+      "const mutations = {};",
+      "",
+      "const actions = {};"
+    ],
+    "description": "Vuex store"
+  }
+}
