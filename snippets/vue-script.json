@@ -107,8 +107,8 @@
       "watch: {",
       "  ${1:data}() {",
       "    ${0}",
-      "  }",
-      "},"
+      "  },",
+      "},,"
     ],
     "description": "vue watcher"
   },
@@ -121,8 +121,8 @@
       "    deep: ${3:true},",
       "    handler() {",
       "      ${0}",
-      "    }",
-      "  }",
+      "    },",
+      "  },",
       "},"
     ],
     "description": "vue watcher with options"
